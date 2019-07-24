@@ -47,6 +47,7 @@
 		A47C2C9E22E8A8C700219ED9 /* UniversalLinksTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversalLinksTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47C2CA222E8A8C700219ED9 /* UniversalLinksTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalLinksTestUITests.swift; sourceTree = "<group>"; };
 		A47C2CA422E8A8C700219ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4FF112022E8ADF30042FEAB /* UniversalLinksTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UniversalLinksTest.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		A47C2C8122E8A8C500219ED9 /* UniversalLinksTest */ = {
 			isa = PBXGroup;
 			children = (
+				A4FF112022E8ADF30042FEAB /* UniversalLinksTest.entitlements */,
 				A47C2C8222E8A8C500219ED9 /* AppDelegate.swift */,
 				A47C2C8422E8A8C500219ED9 /* ViewController.swift */,
 				A47C2C8622E8A8C500219ED9 /* Main.storyboard */,
@@ -193,6 +195,11 @@
 				TargetAttributes = {
 					A47C2C7E22E8A8C500219ED9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					A47C2C9222E8A8C700219ED9 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -431,15 +438,16 @@
 		A47C2CA822E8A8C700219ED9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = background;
+				CODE_SIGN_ENTITLEMENTS = UniversalLinksTest/UniversalLinksTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WJN3EALGRX;
+				DEVELOPMENT_TEAM = RN693TYBDK;
 				INFOPLIST_FILE = UniversalLinksTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jasperreddin.UniversalLinksTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasperreddin.UniversalLinksApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,15 +457,16 @@
 		A47C2CA922E8A8C700219ED9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = background;
+				CODE_SIGN_ENTITLEMENTS = UniversalLinksTest/UniversalLinksTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WJN3EALGRX;
+				DEVELOPMENT_TEAM = RN693TYBDK;
 				INFOPLIST_FILE = UniversalLinksTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jasperreddin.UniversalLinksTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasperreddin.UniversalLinksApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

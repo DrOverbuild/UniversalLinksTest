@@ -1,0 +1,9 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [{
+      "appID": "RN693TYBDK.com.jasperreddin.UniversalLinksApp",
+      "paths": ["*"] 
+    }]
+  }
+}
