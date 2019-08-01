@@ -9,9 +9,9 @@ target 'UniversalLinksTest' do
 
   # Pods for UniversalLinksTest
   
-  pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
   pod 'Firebase/MLVision'
-  pod 'Firebase/MLVisionLabelModel'
+  pod 'Firebase/MLVisionAutoML'
 
   target 'UniversalLinksTestTests' do
     inherit! :search_paths

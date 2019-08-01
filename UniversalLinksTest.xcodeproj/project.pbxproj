@@ -15,6 +15,9 @@
 		A47C2C8D22E8A8C700219ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47C2C8B22E8A8C700219ED9 /* LaunchScreen.storyboard */; };
 		A47C2C9822E8A8C700219ED9 /* UniversalLinksTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C2C9722E8A8C700219ED9 /* UniversalLinksTestTests.swift */; };
 		A47C2CA322E8A8C700219ED9 /* UniversalLinksTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C2CA222E8A8C700219ED9 /* UniversalLinksTestUITests.swift */; };
+		A4EBC1A422EA27C1005E6AC5 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC1A322EA27C1005E6AC5 /* ImageClassifier.mlmodel */; };
+		A4EBC1A622EA3CEE005E6AC5 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC1A522EA3CEE005E6AC5 /* SqueezeNet.mlmodel */; };
+		A4EBC1AA22EA40CA005E6AC5 /* SportsImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC1A922EA40CA005E6AC5 /* SportsImageClassifier.mlmodel */; };
 		A4FF112222E8DAAD0042FEAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4FF112122E8DAAD0042FEAB /* GoogleService-Info.plist */; };
 		A4FF112422E8DEAA0042FEAB /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF112322E8DEAA0042FEAB /* ImagesViewController.swift */; };
 		A4FF112622E8E0120042FEAB /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF112522E8E0120042FEAB /* MainNavController.swift */; };
@@ -62,6 +65,9 @@
 		A47C2C9E22E8A8C700219ED9 /* UniversalLinksTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversalLinksTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47C2CA222E8A8C700219ED9 /* UniversalLinksTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalLinksTestUITests.swift; sourceTree = "<group>"; };
 		A47C2CA422E8A8C700219ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4EBC1A322EA27C1005E6AC5 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
+		A4EBC1A522EA3CEE005E6AC5 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		A4EBC1A922EA40CA005E6AC5 /* SportsImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SportsImageClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
 		A4FF112022E8ADF30042FEAB /* UniversalLinksTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UniversalLinksTest.entitlements; sourceTree = "<group>"; };
 		A4FF112122E8DAAD0042FEAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4FF112322E8DEAA0042FEAB /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +154,9 @@
 		A47C2C8122E8A8C500219ED9 /* UniversalLinksTest */ = {
 			isa = PBXGroup;
 			children = (
+				A4EBC1A922EA40CA005E6AC5 /* SportsImageClassifier.mlmodel */,
+				A4EBC1A322EA27C1005E6AC5 /* ImageClassifier.mlmodel */,
+				A4EBC1A522EA3CEE005E6AC5 /* SqueezeNet.mlmodel */,
 				A4FF112122E8DAAD0042FEAB /* GoogleService-Info.plist */,
 				A4FF112022E8ADF30042FEAB /* UniversalLinksTest.entitlements */,
 				A47C2C8222E8A8C500219ED9 /* AppDelegate.swift */,
@@ -409,7 +418,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4FF112622E8E0120042FEAB /* MainNavController.swift in Sources */,
+				A4EBC1A422EA27C1005E6AC5 /* ImageClassifier.mlmodel in Sources */,
 				A4FF112A22E8E9430042FEAB /* ImageDetailViewController.swift in Sources */,
+				A4EBC1A622EA3CEE005E6AC5 /* SqueezeNet.mlmodel in Sources */,
+				A4EBC1AA22EA40CA005E6AC5 /* SportsImageClassifier.mlmodel in Sources */,
 				A4FF112422E8DEAA0042FEAB /* ImagesViewController.swift in Sources */,
 				A4FF112822E8E71B0042FEAB /* ImageTableViewCell.swift in Sources */,
 				A47C2C8522E8A8C500219ED9 /* ViewController.swift in Sources */,

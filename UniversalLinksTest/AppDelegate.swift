@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseMLCommon
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
+        
+        let initialConditions = ModelDownloadConditions(allowsCellularAccess: true,
+                                                        allowsBackgroundDownloading: true)
+        let updateConditions = ModelDownloadConditions(allowsCellularAccess: false,
+                                                       allowsBackgroundDownloading: true)
+        let remoteModel = RemoteModel(
+            name: "SportsImageClass",  // The name you assigned in the console.
+            allowsModelUpdates: true,
+            initialConditions: initialConditions,
+            updateConditions: updateConditions
+        )
+        ModelManager.modelManager().register(remoteModel)
         
         return true
     }
